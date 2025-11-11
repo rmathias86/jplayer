@@ -13,7 +13,12 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["audio", "audio"],
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.rmathias.jplayer"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +30,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": ["expo-build-properties"],
+    "extra": {
+      "eas": {
+        "projectId": "298a3a6f-614b-4ecb-8a5f-b9713e243acd"
+      }
     }
   }
 }
